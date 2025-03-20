@@ -24,15 +24,18 @@ import {GenerateWithinSentenceOperation} from './generate_within_sentence_operat
 import {MetaPromptOperation} from './meta_prompt_operation';
 import {NextSentenceOperation} from './next_sentence_operation';
 import {NewStoryOperation} from './new_story_operation';
+
 import {ReplaceOperation} from './replace_operation';
 import {RewriteChoiceOperation} from './rewrite_choice_operation';
 import {RewriteEndOfSentenceOperation} from './rewrite_end_of_sentence_operation';
 import {RewriteSelectionOperation} from './rewrite_selection_operation';
 import {RewriteSentenceOperation} from './rewrite_sentence_operation';
 import {SuggestRewriteOperation} from './suggest_rewrite_operation';
+import {NewCharacterOperation} from './new_character_operation';
 
 export {ChoiceOperation} from './choice_operation';
 export {Operation} from './operation';
+ // Added import for NewCharacterOperation
 export {
   ContinuationOperation,
   ElaborationOperation,
@@ -42,6 +45,7 @@ export {
   MetaPromptOperation,
   NextSentenceOperation,
   NewStoryOperation,
+  NewCharacterOperation, // Added NewCharacterOperation export
   ReplaceOperation,
   RewriteChoiceOperation,
   RewriteEndOfSentenceOperation,

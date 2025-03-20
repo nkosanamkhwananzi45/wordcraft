@@ -52,11 +52,6 @@ export const metaPromptSchema = z.object({
   target: z.string(),
 });
 
-export const newStorySchema = z.object({
-  topic: z.string(),
-  target: z.string(),
-});
-
 export const nextSentenceSchema = z.object({
   fullText: z.string(),
   targetSentenceIndex: z.number(),
@@ -105,4 +100,14 @@ export const suggestRewriteSchema = z.object({
     phrase: sizeSchema,
     word: sizeSchema,
   }),
+});
+
+export const newStorySchema = z.object({
+  topic: z.string(),
+  target: z.string(),
+});
+// add the following:
+export const newCharacterSchema = z.object({
+  character: z.string(),
+  target: z.string(),
 });

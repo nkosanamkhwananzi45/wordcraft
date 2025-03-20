@@ -47,10 +47,12 @@ operationsService.registerOperations(
   Operations.GenerateWithinSentenceOperation,
   Operations.NextSentenceOperation,
   Operations.NewStoryOperation,
+  Operations.NewCharacterOperation, // Added NewCharacterOperation
   Operations.ReplaceOperation,
   Operations.RewriteEndOfSentenceOperation,
   Operations.RewriteSelectionOperation,
   Operations.RewriteSentenceOperation
+
 );
 
 // Register prompts with models

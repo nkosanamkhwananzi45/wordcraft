@@ -53,6 +53,7 @@ export type MakePromptHandlerFn<T> = (
  */
 // tslint:disable:no-any
 export abstract class Model {
+  [x: string]: any;
   constructor(private readonly serviceProvider: ServiceProvider) {
     this.makePromptHandler = this.makePromptHandler.bind(this);
   }
